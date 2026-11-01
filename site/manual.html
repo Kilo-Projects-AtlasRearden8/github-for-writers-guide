@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub for Writers — Beginner Manual</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, serif;
+      line-height: 1.7;
+      color: #222;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fff;
+    }
+    header {
+      border-bottom: 3px solid #6b4a2e;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 { margin: 0; font-size: 2rem; }
+    .subtitle { color: #6b4a2e; font-size: 1.1rem; margin-top: 0.25rem; }
+    nav a {
+      margin-right: 1.5rem;
+      color: #6b4a2e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+    .back {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      color: #2a5d8f;
+      text-decoration: none;
+    }
+    .back:hover { text-decoration: underline; }
+    h2 { color: #4a3420; border-bottom: 1px solid #ddd; padding-bottom: 0.4rem; margin-top: 2rem; }
+    h3 { color: #6b4a2e; margin-top: 1.5rem; }
+    p { margin: 0 0 1rem 0; }
+    ul, ol { margin: 0 0 1rem 0; padding-left: 1.5rem; }
+    li { margin-bottom: 0.4rem; }
+    code {
+      background: #f4f4f4;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.5rem;
+      text-align: left;
+    }
+    th { background: #f4f4f4; }
+    .step-box {
+      background: #f7f3ee;
+      border-left: 4px solid #6b4a2e;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      border-radius: 0 6px 6px 0;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    a { color: #2a5d8f; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GitHub for Writers</h1>
+  <p class="subtitle">A beginner manual: version-controlling manuscripts, collaborating with editors, and publishing free author sites.</p>
+  <nav>
+    <a href="index.html">&larr; Back to Home</a>
+    <a href="#welcome">Welcome</a>
+    <a href="#step1">Step 1: Getting Started</a>
+    <a href="#step2">Step 2: Version Control</a>
+    <a href="#step3">Step 3: Editors</a>
+    <a href="#step4">Step 4: Author Site</a>
+  </nav>
+</header>
+
+<main>
+  <section id="welcome">
+    <h2>Welcome</h2>
+    <p>You are a writer, not a programmer. You do not need to write code to use GitHub. This manual walks you through everything in plain English, one step at a time.</p>
+    <p>GitHub is like a filing cabinet (stores your manuscript), a time machine (saves every version), and a shared notebook (you and your editor work together).</p>
+    <p class="step-box"><strong>Credit Asdale Dynamics, LLC.</strong> Written by Dylan Asdale, founder of Asdale Dynamics, LLC (Indiana, formed October 2026), registered nurse turned AI author of <em>The Massive AI Manual</em>.</p>
+  </section>
+
+  <section id="step1">
+    <h2>Step 1: Getting Started with GitHub</h2>
+    <h3>Create your account</h3>
+    <ol>
+      <li>Go to <a href="https://github.com">github.com</a> and click Sign up.</li>
+      <li>Enter an email, create a password, and choose a username.</li>
+      <li>Verify your account (email or puzzle). Choose the free plan.</li>
+    </ol>
+    <h3>Create a repository for your book</h3>
+    <ol>
+      <li>Click the + icon in the top-right, then New repository.</li>
+      <li>Name it (lowercase, numbers, hyphens only), e.g. <code>my-novel</code>.</li>
+      <li>Add a description (optional). Choose Public or Private.</li>
+      <li>Do not add a README or .gitignore yet. Click Create repository.</li>
+    </ol>
+    <h3>Upload your first manuscript file</h3>
+    <ol>
+      <li>Click Add file &rarr; Upload files. Drag your manuscript into the upload area.</li>
+      <li>Type a commit message, e.g. <code>Add Chapter 1 draft</code>.</li>
+      <li>Click Commit changes.</li>
+    </ol>
+    <div class="step-box"><strong>Commit:</strong> saving a snapshot of your project with a message, date, and record of what changed.</div>
+  </section>
+
+  <section id="step2">
+    <h2>Step 2: Version-controlling Your Manuscript</h2>
+    <p>Instead of saving <code>chapter-1-final-v2-really-final.docx</code>, save one file and let GitHub remember every version.</p>
+    <h3>Edit a file on GitHub</h3>
+    <ol>
+      <li>Open your repository, click your manuscript file, then the pencil icon (Edit file).</li>
+      <li>Make your changes.</li>
+      <li>Type a commit message, e.g. <code>Fix typo in Chapter 1</code>.</li>
+      <li>Click Commit changes.</li>
+    </ol>
+    <h3>View your history</h3>
+    <ol>
+      <li>Open your file and click the History (clock) button.</li>
+      <li>Click any commit to see that version of the file.</li>
+    </ol>
+    <h3>Restore an earlier version</h3>
+    <ol>
+      <li>From History, click the commit you want.</li>
+      <li>Open the file, click Edit file, type a message like <code>Restore Chapter 1 from March 3 draft</code>.</li>
+      <li>Click Commit changes.</li>
+    </ol>
+    <p><strong>Good commit messages:</strong> "Add Chapter 1 draft", "Fix spelling in Chapter 3". Avoid: "changes", "final", "update".</p>
+  </section>
+
+  <section id="step3">
+    <h2>Step 3: Collaborating with Editors</h2>
+    <h3>Invite your editor</h3>
+    <ol>
+      <li>Go to Settings &rarr; Collaborators &rarr; Add people.</li>
+      <li>Type your editor's GitHub username or email.</li>
+      <li>Choose a permission: Read (proofreader), Triage or Write (editor), Maintain (co-author).</li>
+      <li>Click Add collaborator. Your editor accepts by email.</li>
+    </ol>
+    <h3>Comment on specific lines</h3>
+    <ol>
+      <li>Open your file, click the line number, then the comment icon.</li>
+      <li>Type your comment and click Add single comment.</li>
+    </ol>
+    <h3>Review editor changes</h3>
+    <ol>
+      <li>Open your file and click History.</li>
+      <li>Click a commit to see green (added) and red (removed) lines.</li>
+    </ol>
+    <p><strong>No secrets:</strong> Never share your password. Invite your editor as a collaborator instead.</p>
+  </section>
+
+  <section id="step4">
+    <h2>Step 4: Publishing a Free Author Site</h2>
+    <h3>Create your site repository</h3>
+    <ol>
+      <li>Create a new repository named exactly <code>yourusername.github.io</code>.</li>
+      <li>Make it Public (required for free GitHub Pages).</li>
+      <li>Click Create repository.</li>
+    </ol>
+    <h3>Add your homepage (<code>index.html</code>)</h3>
+    <ol>
+      <li>Click Add file &rarr; Create new file. Name it <code>index.html</code>.</li>
+      <li>Paste your HTML, edit your name and bio.</li>
+      <li>Commit with message <code>Add author homepage</code>.</li>
+    </ol>
+    <h3>Turn on GitHub Pages</h3>
+    <ol>
+      <li>Settings &rarr; Pages. Source: Deploy from a branch, Branch: main.</li>
+      <li>Save. Wait a minute. Your site is live at <code>https://yourusername.github.io/</code>.</li>
+    </ol>
+    <p><strong>What not to post:</strong> home address, phone number, passwords, API keys. Your site is public.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Dylan Asdale / Asdale Dynamics, LLC. Credit Asdale Dynamics, LLC.</p>
+  </footer>
+</main>
+
+</body>
+</html>

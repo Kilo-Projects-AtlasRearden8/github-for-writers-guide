@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Asdale — Author</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, serif;
+      line-height: 1.7;
+      color: #222;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background: #fff;
+    }
+    header {
+      border-bottom: 3px solid #6b4a2e;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+    h1 { margin: 0; font-size: 2.2rem; letter-spacing: 0.5px; }
+    .subtitle { color: #6b4a2e; font-size: 1.1rem; margin-top: 0.25rem; }
+    nav a {
+      margin-right: 1.5rem;
+      color: #6b4a2e;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+    h2 { color: #4a3420; border-bottom: 1px solid #ddd; padding-bottom: 0.4rem; }
+    h3 { color: #6b4a2e; margin-top: 1.5rem; }
+    p { margin: 0 0 1rem 0; }
+    .book {
+      background: #f7f3ee;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #6b4a2e;
+    }
+    .book h3 { margin: 0 0 0.4rem 0; }
+    .book p { margin: 0; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #ddd;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    a { color: #2a5d8f; }
+    .manual-link {
+      display: inline-block;
+      background: #6b4a2e;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+    }
+    .manual-link:hover { background: #5a3d26; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    @media (min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; background: #fafafa; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Dylan Asdale</h1>
+  <p class="subtitle">Author &bull; Registered Nurse &bull; Founder, Asdale Dynamics, LLC</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#books">Books</a>
+    <a href="#manual">Beginner Manual</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a registered nurse turned AI author and founder of Asdale Dynamics, LLC, based in Indiana (formed October 2026). I write about technology "like a friend would": plain English, step by step, never condescending.</p>
+    <p>My book <em>The Massive AI Manual</em> and my hub site <a href="https://dylanasdale.github.io">dylanasdale.github.io</a> help beginners understand AI, writing, and the tools that make both easier.</p>
+    <p>Asdale Dynamics, LLC focuses on beginner-friendly AI education, books and guides, and practical tools — including free resources for writers like this one.</p>
+  </section>
+
+  <section id="books">
+    <h2>My Books</h2>
+    <div class="book">
+      <h3>The Massive AI Manual</h3>
+      <p>AI explained like a friend would: plain English, step by step, never condescending. A beginner-friendly guide to understanding and using artificial intelligence.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Beginner Manuals</h3>
+        <p>AI tools, agents/MCP, local AI, free AI coding, GitHub, automation, privacy.</p>
+      </div>
+      <div class="card">
+        <h3>Author Tools</h3>
+        <p>KDP book publishing, marketing, reselling (eBay/Amazon), bookkeeping.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="manual">
+    <h2>GitHub for Writers: Beginner Manual</h2>
+    <p>A free, no-code guide for authors who want to version-control manuscripts, collaborate with editors, and publish free author sites on GitHub. Plain English, step by step.</p>
+    <p>Topics covered:</p>
+    <ul>
+      <li>Creating a GitHub account and repository</li>
+      <li>Version-controlling your manuscript drafts</li>
+      <li>Collaborating with editors</li>
+      <li>Publishing a free author website with GitHub Pages</li>
+    </ul>
+    <a href="manual.html" class="manual-link">Read the Manual &rarr;</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Learn more about Asdale Dynamics, LLC and our work at <a href="https://dylanasdale.github.io">dylanasdale.github.io</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Dylan Asdale / Asdale Dynamics, LLC. Built with GitHub Pages. Credit Asdale Dynamics, LLC.</p>
+</footer>
+
+</body>
+</html>
